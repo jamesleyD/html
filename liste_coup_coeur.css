@@ -1,0 +1,338 @@
+
+*{  
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: cursive;          
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* Header*/
+
+/*......................................................................................*/
+/*......................................................................................*/
+
+
+.logo {
+	margin-right: 15px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+}
+
+.account {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	margin-left: 25px;
+}
+
+.panier {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 100px;
+	justify-content: flex-end;
+}
+
+
+.header a {
+	color: black;
+	padding-left: 8px;
+}
+
+.header a:hover {
+	color: #465f85;
+}
+
+@media screen and (max-width:750px ) {
+	.panier {
+		margin-left: 0px ;}
+}
+
+
+
+/* Search_bar */
+/*......................................................................................*/
+/*......................................................................................*/
+
+.search {
+	width: 330px;
+	position: relative;
+	display: flex;
+	max-width: 100%;
+}
+
+.searchTerm {
+	width: 100%;
+	border: 1px solid black;
+	border-right: none;
+	padding: 5px;
+	height: 45px;
+	outline: none;
+}
+
+.searchButton {
+	background-image: url( 
+		'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/OOjs_UI_icon_search.svg/1024px-OOjs_UI_icon_search.svg.png'); 
+	background-size: contain; 
+	background-repeat: no-repeat;
+	width:65px; 
+	height:45px; 
+	border: 1px solid black;
+}
+
+/* Nav_Dropdown */
+/*......................................................................................*/
+/*......................................................................................*/
+
+/* Navbar container */
+
+.nav_cont{
+	background-color: #375fa6;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1050px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color:white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #4b525e;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*......................................................................................*/
+/*......................................................................................*/
+/*FOOTER*/
+
+footer {
+	background-color: #375fa6;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 800px;
+	margin: auto;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+
+.horaire ul {
+	list-style-type: none;
+}
+
+.footer h4 {
+	margin-bottom: 12px;
+	color: #132830;
+}
+
+/* Coup de coeur libraire */
+/*......................................................................................*/
+/*......................................................................................*/
+
+.coeur {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 1300px;
+	max-width: 100%;
+}
+
+.book_cont {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.book_img {
+	padding-left: 10px
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.text_book {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px 20px;
+  color: #063042;
+}
+
+.coeur a {
+	color: #042163;
+}
+
+.info div {
+	display: flex;
+	flex-direction: row;
+}
+
+.info div a {
+	margin:0px 0px 20px 20px;
+}
+
+.com {
+	margin-top: 15px;
+}
+
+.book_cont a {
+	font-size: 35px;
+}
+
+.coeur:hover {
+	background: #718bbf;
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    background-color: #2f548f;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: block;
+    width: 1300px;
+}
+
+/* Pagination links */
+/*......................................................................................*/
+/*......................................................................................*/
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #465f85;
+  color: white;
+}
+
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination {
+	margin-left: 280px;
+}
+
+@media screen and (max-width:1550px ) {
+	.pagination_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+	.pagination{ margin-left: 0px; }
+}
+
+

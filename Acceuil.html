@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Header -->
+
+<head>
+  <link href="Acceuil.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8" />
+  <title> Librairie steampunk </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="La librairie steampunk en ligne: retrouvez de nombreux livres rares et des événements inédits avec une interface moderne. "> <!-- Meta Description -->
+</head>
+
+<body>
+
+  <header class='header'>
+    <nav class="nav">
+      <a href="Acceuil.html"><img class="logo" src="image/logo.jpg" alt="logo_librairie" width="80" height="80"></a>
+      <!-- Search_barre -->
+      <div class="search">
+       <input type="text" class="searchTerm" placeholder="Que cherchez vous ?">
+       <button type="submit" class="searchButton"> </button>
+     </div>
+     <!-- ...... -->
+
+     <div class="panier">
+      <img src="image/panier.jpg" alt="icone_panier" width="50" height="50">
+      <a href="https://example.com">Mon panier</a>
+    </div>
+    <div class="account">
+      <img src="image/account.png" width="50" alt="icone_account" height="50"> 
+      <a href="https://example.com">Me connecter</a>  
+    </div>  
+
+  </nav>
+</header>
+
+<!-- Nav_Dropdown-->
+
+<div class="nav_cont">
+  <div class="navbar">
+    <a href="événement.html">Événement</a>
+    <div class="dropdown">
+     <button class="dropbtn">Recommandation libraire</button>
+     <div class="dropdown-content">
+      <a href="https://example.com">Coup de coeur de la semaine</a>
+      <a href="liste_coup_coeur.html">Tout les coups de coeur</a>
+    </div>
+  </div>
+  <a href="https://example.com">Avis des clients</a>
+  <a href="livre.html">Livre</a>
+  <a href="qui_suis_je.html">Qui suis je?</a>
+</div>
+</div>
+
+<!-- diaporama-->
+
+<div class="slide_cont">
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img src="https://via.placeholder.com/1000x350" alt="image_évent"  /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1000x350" alt="image_évent" /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1000x350" alt="image_évent"  /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1000x350" alt="image_évent" /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1000x350" alt="image_évent"  /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1000x350" alt="image_évent"  /></div>
+      <div class="slide"><img src="https://via.placeholder.com/1000x350" alt="image_évent"   /></div>
+    </div>
+  </div>
+</div>
+
+<!-- Coup de coeur de la semaine -->
+
+<h1 class="title">Le livre de la semaine !</h1>
+<hr>
+<div class="coeur">
+  <span class="book_img">
+    <img src="https://img.livraddict.com/covers/194/194866/couv71225720.jpg" alt="image_livre" height="400" width="270">
+  </span>
+  <div class="text_book">
+    <div class="info">
+      <a href="https://example.com">Title</a>
+      <div> <p>De</p> <a href="https://example.com">Auteur</a> </div>
+      <p>éditeur</p>
+      <p style="color: #1c4485">25 €</p>
+      <p>17/01/2021</p>
+    </div> 
+    <div class="com"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p> </div>  
+  </div>
+</div>
+
+<!--  Affichage livre -->
+
+<h1 class="title">Nouveaux livres</h1>
+<hr>
+
+<div class="nouv_flex">
+ <div class="nouv">
+
+   <div class="book">
+     <img class="b_img" src="https://www.woodbrass.com/images/woodbrass/NOV451638.JPG" alt="image_livre" height="200" width="135" >
+     <div class="para_u">
+       <p class="prix" style="color: #1c4485;">10 €</p>
+       <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+     </div>
+     <div class="para_d">
+      <a href="https://example.com" style="color:#063042;"><p class="titre">Partsong</p> </a>
+      <p class="edition">Novello</p>
+    </div>
+  </div>
+
+  <div class="book">
+   <img class="b_img" src="https://i.pinimg.com/564x/d8/77/5b/d8775b162bf68716e5b51cf2a1ca0ec4.jpg" alt="image_livre" height="200" width="135" >
+   <div class="para_u">
+     <p class="prix" style="color: #1c4485;">10 €</p>
+     <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+   </div>
+   <div class="para_d">
+    <a href="https://example.com" style="color:#063042;"><p class="titre">The Book of The Amazing Story</p> </a>
+    <p class="edition">Seas</p>
+  </div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://meerkatpress.com/wp-content/uploads/2017/01/9781946154002-WingsUnseen-CoverFINAL_03-1-e1493770983811.jpg" alt="image_livre" height="200" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Wings Unseen</p> </a>
+  <p class="edition">Meerkat</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://images.squarespace-cdn.com/content/v1/5b15a2db45776e1335da3ede/1530220451136-G1A056YV4FDJD58O27TB/ke17ZwdGBToddI8pDm48kI-LAJUHHWYTxsODVjoGJFxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzexwoeEJz7tduL9C3t2MgwjsSa9lzrBX1cGQP4eCpZMHuOVR3Dw09vrTBnd_CkuII/Spark-of-Fire-cover.jpg" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Spark of Fire</p> </a>
+  <p class="edition">Bootsamp</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://p5.storage.canalblog.com/58/25/909882/125205349.jpg"  alt="image_livre" height="200" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Circle of Shadows</p> </a>
+  <p class="edition">Eve</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://i.redd.it/7ppb1up7r9n21.jpg" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Hagazussa</p> </a>
+  <p class="edition">Dopperganger</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://storage.googleapis.com/circlesoft/document/photos/003/223/294/original_9781419731501.jpg?1605746188" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Dune</p> </a>
+  <p class="edition">Rub-Al-Kahli</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://i2.wp.com/smithsonianapa.org/bookdragon/wp-content/uploads/sites/10/2019/04/Handmaids-Tale-Renee-Nault-BookDragon.jpg?resize=540%2C800" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">The Hand Maid's Tale</p> </a>
+  <p class="edition">Housy</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://sgwmscdnimages.azureedge.net/69/1-13-2020/1827508612025grgd.JPG" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" height="20" alt="icone_panier" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Hands</p> </a>
+  <p class="edition">Skins</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://www.toon-books.com/uploads/1/2/5/6/12564774/9781943145201_orig.jpg" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" alt="icone_panier" height="20" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Good Night, Planet</p> </a>
+  <p class="edition">Earth</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://www.blybooks.com/wp-content/uploads/2012/09/BlyBook-Son-Of-An-Arizona-Legend-11.jpg" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" alt="icone_panier" height="20" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Son of Arizona Legend</p> </a>
+  <p class="edition">GOP</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://newportfilm.com/wp-content/uploads/2020/10/122_TotallyUnderControl_KA_mk115a-540x800.jpg" height="200" alt="image_livre" width="135" >
+ <div class="para_u">
+   <p class="prix" style="color: #1c4485;">10 €</p>
+   <img class="bck" src="image/backet.png" alt="icone_panier" height="20" width="20">
+ </div>
+ <div class="para_d">
+  <a href="https://example.com" style="color:#063042;"><p class="titre">Totally Under Control</p> </a>
+  <p class="edition">Big Brother</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- Nav_Dropdown-->
+
+<footer>
+  <div class="footer">
+    <div class="horaire">
+      <h4> Horaire (exemple) :</h4>
+      <ul> 
+        <li>dimanche fermé</li>
+        <li>lundi fermé</li>
+        <li>mardi 12:00-20:00</li> 
+        <li>mercredi 12:00-20:00</li> 
+        <li>jeudi 12:00-20:00</li> 
+        <li>vendredi 12:00-20:00</li> 
+      </ul>
+    </div>
+    <div class="adresse">
+      <h4> Adresse :</h4>
+      <p> 17 rue de la Croix-Rousse, 69 Lyon. </p>
+    </div>
+    <div class="social">
+      <h4> Suivez moi !</h4>
+      <p class="icone_S"><a href="https://example.com" class="fa fa-facebook" style="font-size:30px;color:black;"></a>
+        <a href="https://example.com" class="fa fa-twitter" style="font-size:30px;color:black;"></a>
+        <a href="https://example.com" class="fa fa-google" style="font-size:30px;color:black;"></a>
+        <a href="https://example.com" class="fa fa-youtube" style="font-size:30px;color:black;"></a></p>
+
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

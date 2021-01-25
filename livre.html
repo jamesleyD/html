@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Header -->
+
+<head>
+  <link href="livre.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8" />
+  <title>Librairie Steampunk - Livre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Trouvez le livre de vos rêves dans cette librairie steampunk avec un filtrage complet et efficace !"> <!-- Meta Description -->
+</head>
+
+<body>
+
+  <header class='header'>
+    <nav class="nav">
+      <a href="Acceuil.html"><img class="logo" src="image/logo.jpg" alt="logo_librairie" width="80" height="80"></a>
+      <!-- Search_barr -->
+      <div class="search">
+       <input type="text" class="searchTerm" placeholder="Que cherchez vous ?">
+       <button type="submit" class="searchButton"> </button>
+     </div>
+     <!-- ...... -->
+
+     <div class="panier">
+      <img src="image/panier.jpg" alt="icone_panier" width="50" height="50">
+      <a href="https://example.com">Mon panier</a>
+    </div>
+    <div class="account">
+      <img src="image/account.png" width="50" alt="icone_account" height="50"> 
+      <a href="https://example.com">Me connecter</a>  
+    </div>  
+
+  </nav>
+</header>
+
+<!-- Nav_Dropdown-->
+
+<div class="nav_cont">
+  <div class="navbar">
+    <a href="événement.html">Événement</a>
+    <div class="dropdown">
+     <button class="dropbtn">Recommandation libraire</button>
+     <div class="dropdown-content">
+      <a href="https://example.com">Coup de coeur de la semaine</a>
+      <a href="liste_coup_coeur.html">Tout les coups de coeur</a>
+    </div>
+  </div>
+  <a href="https://example.com">Avis des clients</a>
+  <a href="livre.html">Livre</a>
+  <a href="qui_suis_je.html">Qui suis je?</a>
+</div>
+</div>
+
+
+<h3 class="titre_lv">Livres</h3>
+<div class="cont">
+
+  <!-- MENUE -->
+
+  <div class="menue_cont">
+    <div class="menue" >
+      <div class="type">
+        <h3 style="text-align: center;">Filtre</h3>
+        <div style="list-style-type:none; margin:15px;">
+          <a href="https://example.com">Jeunesse</a> <br>
+          <a href="https://example.com">BD et Mangas</a><br>
+          <a href="https://example.com">Biographie</a><br>
+          <a href="https://example.com">Fantaisie</a><br>
+          <a href="https://example.com">Classiques</a><br>
+        </div>    
+      </div>
+      <div class="price">
+        <h3 style="text-align: center;">Prix</h3>
+        <form action="/action_page.php" style="margin:15px;">
+          <input type="checkbox"  name="prix1" value="prix1">
+          <label > Moins de 5€ </label> <br>
+          <input type="checkbox" name="prix2" value="prix2">
+          <label> 5 à 10€</label><br>
+          <input type="checkbox" name="prix3" value="prix3">
+          <label> 10 à 20€</label><br>
+          <input type="checkbox" name="prix4" value="prix4">
+          <label>20 à 40€</label><br>
+          <input type="checkbox" name="prix5" value="prix5">
+          <label> Plus de 40€ </label><br>
+        </form>
+      </div>
+      <div class="date">
+        <h3 style="text-align: center;">Date</h3>
+        <form action="/action_page.php" style="margin:15px;">
+          <input type="checkbox"  name="date1" value="date1">
+          <label> </label>7-15 jours<br>
+          <input type="checkbox" name="date2" value="date2">
+          <label>15-30 jours</label><br>
+          <input type="checkbox" name="date3" value="date3">
+          <label>1-3 mois</label><br>
+          <input type="checkbox" name="date4" value="date4">
+          <label>Plus de 3 mois</label><br>
+          <input type="checkbox" name="date5" value="date5">
+          <label> À paraitre</label><br>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIVRE -->
+
+  <div class="list_book" style="margin-top: 20px;">
+
+   <div class="book">
+     <img class="b_img" src="https://www.babelio.com/couv/cvt_Laffaire-Basketville-Tome-1-Une-etude-en-soie_8825.jpeg"  alt="image_livre_soie" height="260" width="175" >
+     <div class="para_u">
+      <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+      <p class="prix" >10 €</p>
+    </div>
+    <div class="para_d">
+      <a href="https://example.com" ><p class="titre">Une étude en soie</p> </a>
+      <p class="edition" >Bragelonne</p>
+    </div>
+  </div>
+
+  <div class="book">
+   <img class="b_img" src="https://images-na.ssl-images-amazon.com/images/I/51sVJ2E1A8L._SX331_BO1,204,203,200_.jpg" height="260"  alt="image_livre_diable" width="175" >
+   <div class="para_u">
+    <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+    <p class="prix" >12 €</p>
+  </div>
+  <div class="para_d">
+    <a href="https://example.com" ><p class="titre">L'Ambre du Diable</p> </a>
+    <p class="edition" >Box</p>
+  </div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://m.media-amazon.com/images/I/51DmvHSNjpL.jpg" height="260"  alt="image_livre_compagnie" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >20 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">Les annales de la Compagnie Noire</p> </a>
+  <p class="edition" >Castle</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://images-na.ssl-images-amazon.com/images/I/71NAAhg1fFL.jpg" height="260" alt="image_livre_arcane" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >42 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">L'Arcane des Epées</p> </a>
+  <p class="edition" >Pocket</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://www.babelio.com/couv/bm_18918_1123569.jpg" height="260" alt="image_livre_fille" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >4 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">La Fille de l'Empire</p> </a>
+  <p class="edition" >Bragelonne</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://media.senscritique.com/media/000017840343/source_big/Gagner_la_guerre.jpg" height="260" alt="image_livre_guerre" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >Prix</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">Gagner la Guerre</p> </a>
+  <p class="edition">Folio</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://images-na.ssl-images-amazon.com/images/I/71c0r6PBGCL.jpg" height="260" alt="image_livre_seigneur" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >8 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">Les Seigneurs des Runes</p> </a>
+  <p class="edition" >Pocket</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://images-na.ssl-images-amazon.com/images/I/91i+ipJS2cL.jpg" height="260" alt="image_livre_rois" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >32 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">Les Archives de Roshar</p> </a>
+  <p class="edition" >Livre de Poche</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://images-na.ssl-images-amazon.com/images/I/51ed62r28qL._SX319_BO1,204,203,200_.jpg" height="260"  alt="image_livre_doctorwho" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >26 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">Doctor Who La Roue de Glace</p> </a>
+  <p class="edition" >Maxxi</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://www.babelio.com/couv/bm_22681_1585007.jpg" height="260" alt="image_livre_instinct" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >11 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">L'Instinct de l'équarrisseur</p> </a>
+  <p class="edition" >Folio</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://images-na.ssl-images-amazon.com/images/I/51miB0Eo7sL._SX363_BO1,204,203,200_.jpg" height="260" alt="image_livre_boheme" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >19 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">Bohème</p> </a>
+  <p class="edition" >Ricordi</p>
+</div>
+</div>
+
+<div class="book">
+ <img class="b_img" src="https://images-na.ssl-images-amazon.com/images/I/51aAQ7quq5L._SX210_.jpg" height="260" alt="image_livre_prestige" width="175" >
+ <div class="para_u">
+  <img class="bck" src="image/backet.png" height="20" width="20" alt="icone_panier">
+  <p class="prix" >56 €</p>
+</div>
+<div class="para_d">
+  <a href="https://example.com" ><p class="titre">Le Prestige</p> </a>
+  <p class="edition">Folio</p>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<!-- Footer -->
+
+<footer>
+  <div class="footer">
+    <div class="horaire">
+      <h4> Horaires :</h4>
+      <ul> 
+        <li>Dimanche fermé</li>
+        <li>Lundi fermé</li>
+        <li>Mardi 12:00-20:00</li> 
+        <li>Mercredi 12:00-20:00</li> 
+        <li>Jeudi 12:00-20:00</li> 
+        <li>Vendredi 12:00-20:00</li> 
+      </ul>
+    </div>
+    <div class="adresse">
+      <h4> Adresse :</h4>
+      <p> 17 rue de la Croix-Rousse, 69 Lyon. </p>
+    </div>
+    <div class="social">
+      <h4> Suivez moi !</h4>
+      <p class="icone_S"><a href="https://fr-fr.facebook.com/" class="fa fa-facebook" style="font-size:30px;color:black;"></a>
+        <a href="https://twitter.com/?lang=fr" class="fa fa-twitter" style="font-size:30px;color:black;"></a>
+        <a href="https://www.google.fr/" class="fa fa-google" style="font-size:30px;color:black;"></a>
+        <a href="https://www.youtube.com/?gl=FR&tab=w1" class="fa fa-youtube" style="font-size:30px;color:black;"></a></p>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

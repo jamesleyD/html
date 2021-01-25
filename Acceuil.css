@@ -1,0 +1,482 @@
+
+*{  
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: cursive;          
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+/* Header*/
+
+/*......................................................................................*/
+/*......................................................................................*/
+
+
+.logo {
+	margin-right: 15px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+}
+
+.account {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	margin-left: 25px;
+}
+
+.panier {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 100px;
+	justify-content: flex-end;
+}
+
+
+.header a {
+	color: black;
+	padding-left: 8px;
+}
+
+.header a:hover {
+	color: #465f85;
+}
+
+@media screen and (max-width:750px ) {
+	.panier {
+		margin-left: 0px ;}
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    background-color: #2f548f;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 1100px;
+}
+
+
+
+/* Search_bar */
+/*......................................................................................*/
+/*......................................................................................*/
+
+.search {
+	width: 330px;
+	position: relative;
+	display: flex;
+	max-width: 100%;
+}
+
+.searchTerm {
+	width: 100%;
+	border: 1px solid black;
+	border-right: none;
+	padding: 5px;
+	height: 45px;
+	outline: none;
+}
+
+.searchButton {
+	background-image: url( 
+		'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/OOjs_UI_icon_search.svg/1024px-OOjs_UI_icon_search.svg.png'); 
+	background-size: contain; 
+	background-repeat: no-repeat;
+	width:65px; 
+	height:45px; 
+	border: 1px solid black;
+}
+
+
+/* Nav_Dropdown */
+/*......................................................................................*/
+/*......................................................................................*/
+
+/* Navbar container */
+
+.nav_cont{
+	background-color: #375fa6;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1050px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color:white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #4b525e;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Coup de coeur libraire */
+/*......................................................................................*/
+/*......................................................................................*/
+
+.coeur {
+	display: flex;
+	flex-direction: row;
+	height: 430px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.book_img {
+	display: flex;
+	flex-direction: column;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.text_book {
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+	margin-left: 15px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px 20px;
+  color: #06284b;
+}
+
+.coeur a {
+	color: #526066;
+}
+
+.info div {
+	display: flex;
+	flex-direction: row;
+}
+
+.coeur a, .info div p {
+	font-size: 50px;
+	text-decoration: none;
+}
+
+.coeur p {
+	font-size: 17px;
+}
+
+.info div a {
+	margin:0px 0px 20px 20px;
+}
+
+.com {
+	margin-top: 15px;
+}
+
+.com p {
+	font-size: 20px;
+}
+
+
+@media screen and (max-width:750px ) {
+	.com p {
+		font-size: 20px;
+	}
+
+	.coeur p {
+	font-size: 15px;
+		}
+
+	.coeur a, .info div p {
+	font-size: 40px;
+	text-decoration: none;
+		}
+
+}
+
+
+/*  Affichage livre */
+/*......................................................................................*/
+/*......................................................................................*/
+
+
+
+
+.para_u {
+ 	display: flex;
+ 	flex-direction: row;
+}
+
+.para_d {
+ 	display: flex;
+ 	flex-direction: column;
+}
+
+.para_u img {
+	margin-left: 60px;
+}
+
+
+
+.book .edition {
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.para_u,.para_d {
+	width: 135px;
+}
+
+/*......................................................................................*/
+
+
+.nouv {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
+	margin-top: 10px;
+	grid-gap: 35px 125px;
+
+}
+
+.nouv_flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width:850px ) {
+	.nouv {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr 1fr;
+	margin-top: 10px;
+	grid-gap: 35px 90px;
+	}
+}
+
+@media screen and (max-width:585px ) {
+	.nouv {
+	display:grid;
+	grid-template-columns:1fr 1fr ;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+	margin-top: 10px;
+	grid-gap: 35px 90px;
+	}
+}
+
+
+
+
+
+/*......................................................................................*/
+/*......................................................................................*/
+/*FOOTER*/
+
+footer {
+	background-color: #375fa6;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 800px;
+	margin: auto;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+
+.horaire ul {
+	list-style-type: none;
+}
+
+.footer h4 {
+	margin-bottom: 12px;
+	color: #132830;
+}
+
+
+/*diaporama*/
+/*......................................................................................*/
+/*......................................................................................*/
+
+
+/* partie animation images */
+.slide_cont {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	margin-left: 80px;
+}
+
+.slider {
+    width: 1000px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #375fa6;
+    left: -50px;
+    max-width: 100%;
+}
+.slides {
+    width: calc(1000px * 8);
+    animation: glisse 40s infinite;  
+}
+
+.slide img{
+    float: left;
+    max-width: 100%;
+    height: auto;
+
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(0);
+    }
+    15% {
+        transform: translateX(-1000px);
+    }
+    20% {
+        transform: translateX(-1000px);
+    }
+    30% {
+        transform: translateX(-2000px);
+    }
+    35% {
+        transform: translateX(-2000px);
+    }
+    45% {
+        transform: translateX(-3000px);
+    }
+    50% {
+        transform: translateX(-3000px);
+    }
+    60% {
+        transform: translateX(-4000px);
+    }
+    65% {
+        transform: translateX(-4000px);
+    }
+    75% {
+        transform: translateX(-5000px);
+    }
+    80% {
+        transform: translateX(-5000px);
+    }
+    90% {
+        transform: translateX(-6000px);
+    }
+    99% {
+        transform: translateX(-6000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+

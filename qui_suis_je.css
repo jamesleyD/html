@@ -1,0 +1,297 @@
+
+*{  
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: cursive;          
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    color: #2f548f; 
+    background-color: #2f548f;
+    width: 1050px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Header*/
+
+/*......................................................................................*/
+/*......................................................................................*/
+
+
+.logo {
+	margin-right: 15px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+}
+
+.account {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	margin-left: 25px;
+}
+
+.panier {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 100px;
+	justify-content: flex-end;
+}
+
+
+.header a {
+	color: black;
+	padding-left: 8px;
+}
+
+.header a:hover {
+	color: #465f85;
+}
+
+
+
+
+/* Search_bar */
+/*......................................................................................*/
+/*......................................................................................*/
+
+.search {
+	width: 330px;
+	position: relative;
+	display: flex;
+
+}
+
+.searchTerm {
+	width: 100%;
+	border: 1px solid black;
+	border-right: none;
+	padding: 5px;
+	height: 45px;
+	outline: none;
+}
+
+.searchButton {
+	background-image: url( 
+		'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/OOjs_UI_icon_search.svg/1024px-OOjs_UI_icon_search.svg.png'); 
+	background-size: contain; 
+	background-repeat: no-repeat;
+	width:65px; 
+	height:45px; 
+	border: 1px solid black;
+}
+
+/* Nav_Dropdown */
+/*......................................................................................*/
+/*......................................................................................*/
+
+/* Navbar container */
+
+.nav_cont{
+	background-color: #375fa6;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1050px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color:white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #4b525e;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*......................................................................................*/
+/*FOOTER*/
+
+footer {
+	background-color: #375fa6;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 800px;
+	margin: auto;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+
+.horaire ul {
+	list-style-type: none;
+}
+
+.footer h4 {
+	margin-bottom: 12px;
+	color: #132830;
+}
+
+/*......................................................................................*/
+/*......................................................................................*/
+
+
+.qui_suis_je {
+	width: 600px;
+	min-height: 500px;
+	background-color:#306391;
+	margin-top: 10%;
+	border:3px solid black;
+	margin-left: 5px; 
+}
+
+.qui_suis_je p {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.qui_suis_je img {
+	float: right;
+	margin: 10px;
+	min-width:10%;
+	min-height:10%;
+	border:1px solid black;
+}
+
+.qui_suis_je_cont {
+	margin-top: 30px;
+	margin-bottom:40px;
+	align-items: flex-start;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+
+.qui_suis_je_cont .img_deco {
+	border:3px solid black;
+}
+
+.qui_suis_je h1 {
+	text-align: center;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.img_deco {
+	max-width:100%;
+}
+
+@media screen and (max-width:1000px ) {
+	.qui_suis_je_cont{
+		margin-top: 10px;
+		margin-bottom:40px;
+		align-items: center;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.qui_suis_je {
+		order: 1;
+		width: 600px;
+		max-width: 100%;
+		min-height: 500px;
+		border:3px solid black;
+		margin-left: 5px;
+	}
+}	
+
+
